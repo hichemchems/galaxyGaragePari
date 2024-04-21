@@ -22,3 +22,16 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+parameters:
+    mongodb_server: "mongodb://localhost:27017"
+
+
+# config/services.yaml
+services:
+    # ...
+
+    Symfony\Component\HttpFoundation\Session\Storage\Handler\MongoDbSessionHandler:
+        arguments:
+            - '@doctrine_mongodb.odm.default_connection'
+            - { database: '%env(MONGODB_DB)%', collection: 'sessions' }
