@@ -357,7 +357,9 @@
                 "sql",
                 "sqlite",
                 "sqlserver",
-                "sqlsrv"
+                "sqlsrv",
+                "mongodb"
+
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
