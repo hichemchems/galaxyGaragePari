@@ -17,7 +17,7 @@ when@test:
 
 
 # config/packages/framework.yaml
-framework:
-    session:
+# framework:
+   #  session:
         # ...
-        handler_id: Symfony\Component\HttpFoundation\Session\Storage\Handler\MongoDbSessionHandler
+      #  handler_id: Symfony\Component\HttpFoundation\Session\Storage\Handler\MongoDbSessionHandler

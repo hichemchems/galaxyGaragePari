@@ -26,12 +26,14 @@ services:
 parameters:
     mongodb_server: "mongodb://localhost:27017"
 
+    env(MONGODB_URL): ''
+    env(MONGODB_DB): ''
 
 # config/services.yaml
-services:
+# services:
     # ...
 
-    Symfony\Component\HttpFoundation\Session\Storage\Handler\MongoDbSessionHandler:
-        arguments:
-            - '@doctrine_mongodb.odm.default_connection'
-            - { database: '%env(MONGODB_DB)%', collection: 'sessions' }
+    # Symfony\Component\HttpFoundation\Session\Storage\Handler\MongoDbSessionHandler:
+       #  arguments:
+           #  - '@doctrine_mongodb.odm.default_connection'
+           #  - { database: '%env(MONGODB_DB)%', collection: 'sessions' }
