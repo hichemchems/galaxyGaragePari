@@ -28,3 +28,12 @@ parameters:
 
     env(MONGODB_URL): ''
     env(MONGODB_DB): ''
+
+# # config/services.yaml
+# services:
+#     # ...
+
+#     Symfony\Component\HttpFoundation\Session\Storage\Handler\MongoDbSessionHandler:
+#         arguments:
+#             - '@doctrine_mongodb.odm.default_connection'
+#             - { database: '%env(MONGODB_DB)%', collection: 'sessions' }
