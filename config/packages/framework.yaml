@@ -16,8 +16,8 @@ when@test:
             storage_factory_id: session.storage.factory.mock_file
 
 
-# config/packages/framework.yaml
-framework:
-    session:
-        # ...
-        handler_id: Symfony\Component\HttpFoundation\Session\Storage\Handler\MongoDbSessionHandler
+# # config/packages/framework.yaml
+# framework:
+#     session:
+#         # ...
+#         handler_id: Symfony\Component\HttpFoundation\Session\Storage\Handler\MongoDbSessionHandler
